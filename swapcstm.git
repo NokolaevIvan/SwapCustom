@@ -1,0 +1,14 @@
+import time
+
+account_address = '0xffffffffffffffffffffffffffffff'
+input_quantity_wei = 1000000000000000000
+minimum_input_quantity_wei = 997000000000000000
+deadline = int(time.time() + 60)
+fun = contract.functions.swapExactTokensForTokens(
+  input_quantity_wei,
+  minimum_input_quantity_wei,
+  swap_path,
+  account_address,
+  deadline
+)
+
